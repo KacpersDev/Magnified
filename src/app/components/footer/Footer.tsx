@@ -41,7 +41,7 @@ const Footer = () => {
             </div>
             <div className="text-center">
                 <p className="text-[#ff5f5f] font-metropolis_700">2024 Nine Ventures LLC. All rights Reserved.</p>
-                <p className="text-white font-metropolis_700">Making Dreams Realit.</p>
+                <p className="text-white font-metropolis_700">Making Dreams Reality.</p>
             </div>
         </div>
     )

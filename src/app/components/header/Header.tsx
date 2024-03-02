@@ -2,47 +2,67 @@
 import Logo from "@/app/assets/logo.png"
 
 import Image from "next/image";
-import { useRouter } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const Header = () => {
-
+    /*
+                    {getButton("Home", "/")}
+                {getButton("What we do?", "/do")}
+                {getButton("Clients", "/clients")}
+                {getButton("Partnership", "/partnership")}
+                {getButton("Blog", "/blog")}
+    */
     const router = useRouter();
-    const [button, setButton] = useState("Home");
+    const params = useParams();
+    const [button, setButton] = useState("home");
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            const url = window.location.href;
+
+            if (url.includes("/do")) {
+                setButton("what we do?");
+            } else if (url.includes("/clients")) {
+                setButton("clients");
+            } else if (url.includes("/partnership")) {
+                setButton("partnership");
+            } else if (url.includes("/blog")) {
+                setButton("blog");
+            } else {
+                setButton("home");
+            }
+        }
+    }, []);
 
     return(
         <div className="font-metropolis">
             <Image className="ml-auto mr-auto" width={300} height={100} src={Logo} alt={"Company Logo"}/>
             <div className="flex justify-center mt-[-60px]">
-                {getButton("Home", "/")}
-                {getButton("What we do?", "/do")}
-                {getButton("Clients", "/clients")}
-                {getButton("Partnership", "/partnership")}
-                {getButton("Blog", "/blog")}
+                <button className={button === "home" ? "m-5 hover:cursor-pointer font-metropolis_700 text-[#ff5f5f]" : "m-5 hover:cursor-pointer font-metropolis_700 text-black hover:text-[#ff5f5f]"} onClick={(() => {
+                    setButton("home");
+                    router.push("/");
+                })}>Home</button>
+                <button className={button === "what we do ?" ? "m-5 hover:cursor-pointer font-metropolis_700 text-[#ff5f5f]" : "m-5 hover:cursor-pointer font-metropolis_700 text-black hover:text-[#ff5f5f]"} onClick={(() => {
+                    setButton("what we do ?");
+                    router.push("/do");
+                })}>What we do ?</button>
+                <button className={button === "clients" ? "m-5 hover:cursor-pointer font-metropolis_700 text-[#ff5f5f]" : "m-5 hover:cursor-pointer font-metropolis_700 text-black hover:text-[#ff5f5f]"} onClick={(() => {
+                    setButton("clients");
+                    router.push("/clients");
+                })}>Clients</button>
+                <button className={button === "partnership" ? "m-5 hover:cursor-pointer font-metropolis_700 text-[#ff5f5f]" : "m-5 hover:cursor-pointer font-metropolis_700 text-black hover:text-[#ff5f5f]"} onClick={(() => {
+                    setButton("partnership");
+                    router.push("/partnership");
+                })}>Partnership</button>
+                <button className={button === "blog" ? "m-5 hover:cursor-pointer font-metropolis_700 text-[#ff5f5f]" : "m-5 hover:cursor-pointer font-metropolis_700 text-black hover:text-[#ff5f5f]"} onClick={(() => {
+                    setButton("blog");
+                    router.push("/blog");
+                })}>Blog</button>
                 <button className="m-5 hover:cursor-pointer text-white bg-[#ff5f5f] w-[100px] h-[30px] rounded-xl font-metropolis_700">Let's Talk</button>
             </div>
         </div>
     )
-
-    function getButton(name: string, path: string){
-        if (name === button) {
-            return (
-                <button className="m-5 hover:cursor-pointer font-metropolis_700 text-[#ff5f5f]" onClick={(() => {
-                    setButton("What we do?");
-                    setButton("Clients?");
-                    router.push(path);
-                })}>{name}</button>
-            )
-        } else {
-            return (
-                <button className="m-5 hover:cursor-pointer hover:text-[#ff5f5f]" onClick={(() => {
-                    setButton("What we do?");
-                    setButton("Clients?");
-                    router.push(path);
-                })}>{name}</button>
-            )
-        }
-    }
 }
 
 export default Header;
