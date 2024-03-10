@@ -20,7 +20,7 @@ const Testimonials = () => {
                 </div>
             </div>
             <div className="mt-[15px] m-[20px]">
-                <p className="w-[350px] text-[15px] text-[#848484] max-[1250px]:text-center">
+                <p className="w-[350px] text-[15px] text-[#848484] max-[1250px]:text-center max-[360px]:w-[300px]">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
                 </p>
@@ -29,7 +29,7 @@ const Testimonials = () => {
                 <p className="text-[#848484] font-metropolis_600 max-[1250px]:text-center">Musician</p>
             </div>
             <div className="mt-[15px] m-[20px]">
-                <p className="w-[350px] text-[15px] text-[#848484] max-[1250px]:text-center">
+                <p className="w-[350px] text-[15px] text-[#848484] max-[1250px]:text-center max-[360px]:w-[300px]">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. 
                 </p>

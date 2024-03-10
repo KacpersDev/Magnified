@@ -42,32 +42,32 @@ const Contact = () => {
             <p className="text-[50px] font-metropolis_700 text-center">Let's work <span className="text-[#ff5f5f]">together</span>.</p>
             <p className="text-center w-[550px] text-[25px] ml-auto mr-auto font-metropolis_600">Fill out the form below and a member of our team will contact you as soon as possible!</p>
             <form className="mt-[100px]">
-                <p className="text-center text-[25px] font-metropolis_700 mr-[350px]">What field are you in?</p>
-                <div className="flex justify-center">
-                    <div className="flex m-[10px]">
+                <p className="text-center text-[25px] font-metropolis_700 min-[615px]:mr-[350px] max-[615px]:text-center">What field are you in?</p>
+                <div className="flex justify-center max-[400px]:grid">
+                    <div className="flex m-[10px] max-[400px]:ml-auto max-[400px]:mr-auto">
                         <input className="w-[16px] mt-[-3px] accent-red-500" type="radio" onClick={(() => setMusician(!musician))}/>
                         <p className="text-[20px] ml-[5px]">Musician</p>
                     </div>
-                    <div className="flex m-[10px]">
+                    <div className="flex m-[10px] max-[400px]:ml-auto max-[400px]:mr-auto">
                         <input className="w-[16px] mt-[-3px] accent-red-500" type="radio" onClick={(() => setCreator(!creator))}/>
                         <p className="text-[20px] ml-[5px]">Influencer/Creator</p>
                     </div>
-                    <div className="flex m-[10px]">
+                    <div className="flex m-[10px] max-[400px]:ml-auto max-[400px]:mr-auto">
                         <input className="w-[16px] mt-[-3px] accent-red-500" type="radio" onClick={(() => setArtist(!artist))}/>
                         <p className="text-[20px] ml-[5px]">Artist</p> 
                     </div>
                 </div>
-                <div className="flex justify-center">
+                <div className="flex justify-center max-[400px]:grid">
                     <div className="flex m-[10px]">
                         <input className="w-[16px] mt-[-3px] accent-red-500" type="radio" onClick={(() => setModel(!model))}/>
-                        <p className="text-[20px] ml-[5px]">Model</p>
+                        <p className="text-[20px] min-[400px]:ml-[5px]">Model</p>
                     </div>
                     <div className="flex m-[10px]">
                         <input className="w-[16px] mt-[-3px] accent-red-500" type="radio" onClick={(() => setOther(!other))}/>
                         <p className="text-[20px] ml-[5px]">Other</p>
                     </div>
                 </div>
-                <p className="text-center text-[25px] font-metropolis_700 mr-[460px]">Your Details</p>
+                <p className="text-center text-[25px] font-metropolis_700 min-[615px]:mr-[460px] max-[615px]:text-center">Your Details</p>
                 <div className="grid justify-center mt-[20px]">
                     <div>
                         <input className="w-[250px] h-[40px] m-[15px] border-2 border-gray-400 rounded p-[5px]" type="text" placeholder="First Name" required
@@ -81,7 +81,7 @@ const Contact = () => {
                         <input className="w-[250px] h-[40px] m-[15px] border-2 border-gray-400 rounded p-[5px]" type="phone" placeholder="Phone Number" required
                             onChange={((e) => setPhone(e.target.value))}/>
                     </div>
-                    <p className="text-[20px]">Social Media Link(s)</p>
+                    <p className="text-[20px] max-[400px]:text-center">Social Media Link(s)</p>
                     <div>
                         <input className="w-[250px] h-[40px] m-[15px] border-2 border-gray-400 rounded p-[5px]" type="text" placeholder="Link 1"
                             onChange={((e) => setLink1(e.target.value))}/>

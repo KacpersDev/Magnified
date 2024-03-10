@@ -32,27 +32,27 @@ const Header = () => {
         <div className="font-metropolis">
             <Image className="ml-auto mr-auto" width={300} height={100} src={Logo} alt={"Company Logo"}/>
             <div className="flex justify-center mt-[-60px] max-[680px]:text-[15px]">
-                <button className={button === "home" ? "min-[680px]:m-5 hover:cursor-pointer font-metropolis_700 text-[#ff5f5f]" : "min-[680px]:m-5 hover:cursor-pointer font-metropolis_700 text-black hover:text-[#ff5f5f]"} onClick={(() => {
+                <button className={button === "home" ? "min-[680px]:m-5 m-[5px] hover:cursor-pointer font-metropolis_700 text-[#ff5f5f]" : "min-[680px]:m-5 m-[5px] hover:cursor-pointer font-metropolis_700 text-black hover:text-[#ff5f5f]"} onClick={(() => {
                     setButton("home");
                     router.push("/");
                 })}>Home</button>
-                <button className={button === "what we do?" ? "min-[680px]:m-5 hover:cursor-pointer font-metropolis_700 text-[#ff5f5f]" : "min-[680px]:m-5 hover:cursor-pointer font-metropolis_700 text-black hover:text-[#ff5f5f]"} onClick={(() => {
+                <button className={button === "what we do?" ? "min-[680px]:m-5 m-[5px] hover:cursor-pointer font-metropolis_700 text-[#ff5f5f]" : "min-[680px]:m-5 m-[5px] hover:cursor-pointer font-metropolis_700 text-black hover:text-[#ff5f5f]"} onClick={(() => {
                     setButton("what we do?");
                     router.push("/do");
                 })}>What we do ?</button>
-                <button className={button === "clients" ? "min-[680px]:m-5 hover:cursor-pointer font-metropolis_700 text-[#ff5f5f]" : "min-[680px]:m-5 hover:cursor-pointer font-metropolis_700 text-black hover:text-[#ff5f5f]"} onClick={(() => {
+                <button className={button === "clients" ? "min-[680px]:m-5 m-[5px] hover:cursor-pointer font-metropolis_700 text-[#ff5f5f]" : "min-[680px]:m-5 m-[5px] hover:cursor-pointer font-metropolis_700 text-black hover:text-[#ff5f5f]"} onClick={(() => {
                     setButton("clients");
                     router.push("/clients");
                 })}>Clients</button>
-                <button className={button === "partnership" ? "min-[680px]:m-5 hover:cursor-pointer font-metropolis_700 text-[#ff5f5f]" : "min-[680px]:m-5 hover:cursor-pointer font-metropolis_700 text-black hover:text-[#ff5f5f]"} onClick={(() => {
+                <button className={button === "partnership" ? "min-[680px]:m-5 m-[5px] hover:cursor-pointer font-metropolis_700 text-[#ff5f5f]" : "min-[680px]:m-5 m-[5px] hover:cursor-pointer font-metropolis_700 text-black hover:text-[#ff5f5f]"} onClick={(() => {
                     setButton("partnership");
                     router.push("/partnership");
                 })}>Partnership</button>
-                <button className={button === "blog" ? "min-[680px]:m-5 hover:cursor-pointer font-metropolis_700 text-[#ff5f5f]" : "min-[680px]:m-5 hover:cursor-pointer font-metropolis_700 text-black hover:text-[#ff5f5f]"} onClick={(() => {
+                <button className={button === "blog" ? "min-[680px]:m-5 m-[5px] hover:cursor-pointer font-metropolis_700 text-[#ff5f5f]" : "min-[680px]:m-5 m-[5px] hover:cursor-pointer font-metropolis_700 text-black hover:text-[#ff5f5f]"} onClick={(() => {
                     setButton("blog");
                     router.push("/blog");
                 })}>Blog</button>
-                <button className="m-5 hover:cursor-pointer text-white bg-[#ff5f5f] w-[100px] h-[30px] rounded-xl font-metropolis_700" onClick={(() => router.push('/contact'))}>Let's Talk</button>
+                <button className="min-[680px]:m-5 hover:cursor-pointer text-white m-[5px] bg-[#ff5f5f] w-[100px] h-[30px] rounded-xl font-metropolis_700" onClick={(() => router.push('/contact'))}>Let's Talk</button>
             </div>
         </div>
     )
