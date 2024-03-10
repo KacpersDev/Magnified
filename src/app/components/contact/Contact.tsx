@@ -39,7 +39,7 @@ const Contact = () => {
 
     return(
         <div className="font-metropolis mt-[125px]">
-            <p className="text-[50px] font-metropolis_700 text-center">Let's work <span className="text-[#ff5f5f]">together</span>.</p>
+            <p className="text-[50px] font-metropolis_700 text-center">Let&apos;s work <span className="text-[#ff5f5f]">together</span>.</p>
             <p className="text-center w-[550px] text-[25px] ml-auto mr-auto font-metropolis_600">Fill out the form below and a member of our team will contact you as soon as possible!</p>
             <form className="mt-[100px]">
                 <p className="text-center text-[25px] font-metropolis_700 min-[615px]:mr-[350px] max-[615px]:text-center">What field are you in?</p>

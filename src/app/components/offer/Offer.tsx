@@ -20,7 +20,7 @@ const Offer = () => {
             </p>
             <button className="flex justify-center ml-auto mr-auto pt-[7px] text-white w-[200px] h-[40px] mt-[15px] rounded-2xl bg-[#ff5f5f] hover:cursor-pointer" onClick={(() => {
                 router.push('/contact');
-            })}>Let's Get Started!</button>
+            })}>Let&apos;s Get Started!</button>
             <div className="flex justify-center mt-[100px] max-[1380px]:grid">
                 <div className="w-[600px] ml-[10px] m-[100px] mt-[100px] max-[1380px]:ml-auto max-[1380px]:mr-auto max-[1380px]:text-center">
                     <p className="font-metropolis_700 text-[30px] max-[330px]:text-[25px]">What we <span className="text-[#ff5f5f]">can offer you.</span></p>
@@ -42,7 +42,7 @@ const Offer = () => {
                             <Image className="min-[1380px]:ml-[110px] max-[1380px]:ml-auto max-[1380px]:mr-auto" width={100} height={100} src={Camera} alt={"Camera"}/>
                             <p className="font-metropolis_700 text-center min-[1380px]:ml-[30px] text-[25px] mt-[20px]">VISIONARIES</p>
                             <p className="text-center w-[350px] max-[1380px]:ml-[-20px] max-[360px]:w-[300px] max-[360px]:ml-[7px]">
-                                We "capture the moment". Everwant to tell your kids what you once did when you were younger? Ever want to inspire a totally new generation?
+                                We &quot;capture the moment&quot;. Everwant to tell your kids what you once did when you were younger? Ever want to inspire a totally new generation?
                                 At Magnified Marketing we are visionaries, ready to focus on expanding your vision to reality. 
                                 We work with our clients closely to produce the highest quality of work to satisfy their needs. 
                             </p>
@@ -52,7 +52,7 @@ const Offer = () => {
                             <p className="font-metropolis_700 text-center text-[25px] mt-[20px] min-[1380px]:ml-[40px]">ENGAGEMENT</p>
                             <p className="text-center w-[350px] max-[1380px]:ml-[-20px] max-[360px]:w-[300px] max-[360px]:ml-[7px]">
                                 Likes, Follows, Shares, Comments. All words we hear from agencies but our up-to-date market solutions and social media management
-                                go beyond just growing your brand’s name to fame and receiving them. 
+                                go beyond just growing your brand&quot;s name to fame and receiving them. 
                                 We take it a step further by expanding the community and fanbase around YOU. 
                                 By focusing on your community, it not only allows room for individual growth but also garuntees success.
                             </p>
@@ -63,8 +63,8 @@ const Offer = () => {
                             <Image className="min-[1380px]:ml-[110px] max-[1380px]:ml-auto max-[1380px]:mr-auto" width={100} height={100} src={Time} alt={"Time"}/>
                             <p className="font-metropolis_700 text-center text-[25px] mt-[20px] min-[1380px]:ml-[30px]">YOUR TIME</p>
                             <p className="text-center w-[350px] max-[1380px]:ml-[-20px] max-[360px]:w-[300px] max-[360px]:ml-[7px]">
-                                Your time is most important to us. It’s the one thing that is scarce in our world. 
-                                That’s why our innovative marketing strategies push the boundaries by delivering outstanding results by helping YOU stay ahead of the curve.
+                                Your time is most important to us. It&quot;s the one thing that is scarce in our world. 
+                                That&quot;s why our innovative marketing strategies push the boundaries by delivering outstanding results by helping YOU stay ahead of the curve.
                                 By combining creative thinking with forward-looking insights, they anticipate industry trendsand easily adapt to the evolving landscape.
                             </p>
                         </div>

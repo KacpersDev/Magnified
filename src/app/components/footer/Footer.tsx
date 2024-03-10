@@ -32,7 +32,7 @@ const Footer = () => {
                 </div>
                 <div className="mt-[75px] m-[75px] max-[1050px]:ml-auto max-[1050px]:mr-auto">
                     <p className="text-[#ff5f5f] font-metropolis_700 text-[35px]">Get in touch.</p>
-                    <p className="text-white w-[200px]"><span className="text-[#ff5f5f] ">Interested?</span> Talk with us, we'd love to hear from you.</p>
+                    <p className="text-white w-[200px]"><span className="text-[#ff5f5f] ">Interested?</span> Talk with us, we&quot;d love to hear from you.</p>
                     <form className="grid">
                         <input className="text-white bg-[#251c1c] border-2 rounded-2xl p-[5px] border-[#ff5f5f] w-[250px]" type="email" placeholder="Your email here"/>
                         <input className="bg-[#ff5f5f] text-white h-[30px] rounded-2xl mt-[10px] w-[250px]" type="submit" value={"Send"}/>

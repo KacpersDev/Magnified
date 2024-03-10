@@ -17,7 +17,7 @@ const Do = () => {
                         <p className="text-[#ff5f5f] text-[35px] font-metropolis_700 max-[1050px]:text-center">01 - Knowledgable</p>
                         <p className="w-[500px] max-[1050px]:text-center max-[500px]:w-[300px] max-[500px]:ml-auto max-[500px]:mr-auto">
                             Our team here at Magnified Marketing are knowledaable across various industries. With this knowledge.
-                            we're able to provide intensive ac wen those -our vision towares ou cients
+                            we&apos;re able to provide intensive ac wen those -our vision towares ou cients
                             without losind the conr ection that orought us together
                             uniqueness.
                         </p>

@@ -52,7 +52,7 @@ const Header = () => {
                     setButton("blog");
                     router.push("/blog");
                 })}>Blog</button>
-                <button className="min-[680px]:m-5 hover:cursor-pointer text-white m-[5px] bg-[#ff5f5f] w-[100px] h-[30px] rounded-xl font-metropolis_700" onClick={(() => router.push('/contact'))}>Let's Talk</button>
+                <button className="min-[680px]:m-5 hover:cursor-pointer text-white m-[5px] bg-[#ff5f5f] w-[100px] h-[30px] rounded-xl font-metropolis_700" onClick={(() => router.push('/contact'))}>Let&apos;s Talk</button>
             </div>
         </div>
     )

@@ -9,7 +9,7 @@ const Blog = () => {
             <p className="text-[50px] text-center font-metropolis_900 max-[500px]:text-[35px]">OUR BLOG POSTS</p>
             <p className="text-center text-[30px] w-[500px] ml-auto mr-auto max-[500px]:w-[300px] max-[500px]:text-[20px]">
                 Our blog posts aim to showcase our work, new and up-coming artists, 
-                industry leading analysis's done by our dedicated team, analysis on genres and much more!
+                industry leading analysis&apos;s done by our dedicated team, analysis on genres and much more!
             </p>
             <p className="text-center text-[30px] mt-[30px] max-[500px]:text-[20px]">Keep up to date by subscribing below!</p>
             <form className="grid justify-center">
