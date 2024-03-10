@@ -1,11 +1,16 @@
+'use client';
 import Camera from "@/app/assets/camera.png";
 import Heart from "@/app/assets/heart.png";
 import Time from "@/app/assets/time.png";
 import Dollar from "@/app/assets/dollar.png";
 
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const Offer = () => {
+
+    const router = useRouter();
+
     return(
         <div className="font-metropolis mt-[75px]">
             <p className="text-center ml-auto mr-auto font-metropolis_700 text-[50px] w-[500px] max-[500px]:w-[300px] max-[500px]:text-[35px]">MAGNIFY <span className="text-[#ff5f5f]">YOUR</span> SUCCESS.</p>
@@ -13,7 +18,9 @@ const Offer = () => {
                 Providing up-to-date marketing solutions for
                 artists, influencers, creators and brands.
             </p>
-            <button className="flex justify-center ml-auto mr-auto pt-[7px] text-white w-[200px] h-[40px] mt-[15px] rounded-2xl bg-[#ff5f5f] hover:cursor-pointer">Let's Get Started!</button>
+            <button className="flex justify-center ml-auto mr-auto pt-[7px] text-white w-[200px] h-[40px] mt-[15px] rounded-2xl bg-[#ff5f5f] hover:cursor-pointer" onClick={(() => {
+                router.push('/contact');
+            })}>Let's Get Started!</button>
             <div className="flex justify-center mt-[100px] max-[1380px]:grid">
                 <div className="w-[600px] ml-[10px] m-[100px] mt-[100px] max-[1380px]:ml-auto max-[1380px]:mr-auto max-[1380px]:text-center">
                     <p className="font-metropolis_700 text-[30px] max-[330px]:text-[25px]">What we <span className="text-[#ff5f5f]">can offer you.</span></p>
