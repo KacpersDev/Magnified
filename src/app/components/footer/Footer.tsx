@@ -5,15 +5,15 @@ import Image from "next/image";
 const Footer = () => {
     return (
         <div className="bg-[#251c1c] mt-[100px] font-metropolis">
-            <div className="flex justify-center">
+            <div className="flex justify-center max-[1050px]:grid">
                 <div className="mt-[-25px] m-[75px]">
                     <Image width={300} height={300} src={Logo.src} alt="Logo"/>
-                    <p className="text-white w-[330px] mt-[-75px]">
+                    <p className="text-white w-[330px] mt-[-75px] max-[1050px]:text-center">
                         Magnified Marketing is a specialized agency that empowers artists. influencers.
                         and creators to amplifv thair prasanca and expand their reach in the digital realm.
                     </p>
                 </div>
-                <div className="mt-[75px] m-[75px]">
+                <div className="mt-[75px] m-[75px] max-[1050px]:ml-auto max-[1050px]:mr-auto">
                     <p className="text-[#ff5f5f] font-metropolis_700 text-[35px]">About.</p>
                     <div className="flex">
                         <div className="grid">
@@ -30,7 +30,7 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="mt-[75px] m-[75px]">
+                <div className="mt-[75px] m-[75px] max-[1050px]:ml-auto max-[1050px]:mr-auto">
                     <p className="text-[#ff5f5f] font-metropolis_700 text-[35px]">Get in touch.</p>
                     <p className="text-white w-[200px]"><span className="text-[#ff5f5f] ">Interested?</span> Talk with us, we'd love to hear from you.</p>
                     <form className="grid">
