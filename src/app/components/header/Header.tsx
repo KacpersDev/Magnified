@@ -6,15 +6,8 @@ import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
 const Header = () => {
-    /*
-                    {getButton("Home", "/")}
-                {getButton("What we do?", "/do")}
-                {getButton("Clients", "/clients")}
-                {getButton("Partnership", "/partnership")}
-                {getButton("Blog", "/blog")}
-    */
+
     const router = useRouter();
-    const params = useParams();
     const [button, setButton] = useState("home");
 
     useEffect(() => {
@@ -43,8 +36,8 @@ const Header = () => {
                     setButton("home");
                     router.push("/");
                 })}>Home</button>
-                <button className={button === "what we do ?" ? "m-5 hover:cursor-pointer font-metropolis_700 text-[#ff5f5f]" : "m-5 hover:cursor-pointer font-metropolis_700 text-black hover:text-[#ff5f5f]"} onClick={(() => {
-                    setButton("what we do ?");
+                <button className={button === "what we do?" ? "m-5 hover:cursor-pointer font-metropolis_700 text-[#ff5f5f]" : "m-5 hover:cursor-pointer font-metropolis_700 text-black hover:text-[#ff5f5f]"} onClick={(() => {
+                    setButton("what we do?");
                     router.push("/do");
                 })}>What we do ?</button>
                 <button className={button === "clients" ? "m-5 hover:cursor-pointer font-metropolis_700 text-[#ff5f5f]" : "m-5 hover:cursor-pointer font-metropolis_700 text-black hover:text-[#ff5f5f]"} onClick={(() => {
@@ -59,7 +52,7 @@ const Header = () => {
                     setButton("blog");
                     router.push("/blog");
                 })}>Blog</button>
-                <button className="m-5 hover:cursor-pointer text-white bg-[#ff5f5f] w-[100px] h-[30px] rounded-xl font-metropolis_700">Let's Talk</button>
+                <button className="m-5 hover:cursor-pointer text-white bg-[#ff5f5f] w-[100px] h-[30px] rounded-xl font-metropolis_700" onClick={(() => router.push('/contact'))}>Let's Talk</button>
             </div>
         </div>
     )
