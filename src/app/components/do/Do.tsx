@@ -1,6 +1,7 @@
 'use client';
 
 import { useRouter } from "next/navigation";
+import { TypeAnimation } from 'react-type-animation';
 
 const Do = () => {
 
@@ -9,7 +10,8 @@ const Do = () => {
     return(
         <div className="mt-[100px] font-metropolis">
             <p className="text-center text-[45px] font-metropolis_700">WE OFFER</p>
-            <p className="text-center text-[45px]">typing css animation</p>
+            <p className="text-center text-[45px]"><TypeAnimation sequence={['Hello World', 1000, 'Goodbye World', 1000]}
+                wrapper="span" speed={25} repeat={Infinity}/></p>
             <div className="flex justify-center mt-[100px] max-[1050px]:grid max-[1050px]:mt-[100px]">
                 <div className="grid m-[20px]">
                     <p className="text-[#ff5f5f] text-[35px] font-metropolis_700 max-[1050px]:text-center">Why choose us ?</p>
