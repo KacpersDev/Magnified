@@ -1,4 +1,11 @@
+'use client';
+
+import { useRouter } from "next/navigation";
+
 const Do = () => {
+
+    const router = useRouter();
+
     return(
         <div className="mt-[100px] font-metropolis">
             <p className="text-center text-[45px] font-metropolis_700">WE OFFER</p>
@@ -42,7 +49,7 @@ const Do = () => {
             <div className="text-center mt-[100px] grid justify-center ">
                 <p className="text-[45px] font-metropolis_700">Get in touch!</p>
                 <p className="text-[30px] w-[250px] font-metropolis_600">Interested in working with us?</p>
-                <button className="bg-[#ff5f5f] h-[30px] w-[120px] ml-auto mr-auto text-white rounded-xl mt-[15px] mb-[100px]">Contact Us</button>
+                <button className="bg-[#ff5f5f] h-[30px] w-[120px] ml-auto mr-auto text-white rounded-xl mt-[15px] mb-[100px]" onClick={(() => router.push("/contact"))}>Contact Us</button>
             </div>
         </div>
     )

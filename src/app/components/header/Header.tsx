@@ -17,11 +17,11 @@ const Header = () => {
             const url = window.location.href;
 
             if (url.includes("/do")) {
-                setButton("what we do?");
+                setButton("what we do");
             } else if (url.includes("/clients")) {
                 setButton("clients");
             } else if (url.includes("/partnership")) {
-                setButton("partnership");
+                setButton("partnerships");
             } else if (url.includes("/blog")) {
                 setButton("blog");
             } else {
@@ -43,22 +43,18 @@ const Header = () => {
                     setButton("home");
                     router.push("/");
                 })}>Home</button>
-                <button className={button === "what we do?" ? "min-[680px]:m-5 m-[5px] hover:cursor-pointer font-metropolis_700 text-[#ff5f5f] max-[680px]:bg-white max-[680px]:w-[680px]" : "max-[680px]:bg-white max-[680px]:w-[680px] min-[680px]:m-5 m-[5px] hover:cursor-pointer font-metropolis_700 text-black hover:text-[#ff5f5f]"} onClick={(() => {
-                    setButton("what we do?");
+                <button className={button === "what we do" ? "min-[680px]:m-5 m-[5px] hover:cursor-pointer font-metropolis_700 text-[#ff5f5f] max-[680px]:bg-white max-[680px]:w-[680px]" : "max-[680px]:bg-white max-[680px]:w-[680px] min-[680px]:m-5 m-[5px] hover:cursor-pointer font-metropolis_700 text-black hover:text-[#ff5f5f]"} onClick={(() => {
+                    setButton("what we do");
                     router.push("/do");
-                })}>What we do ?</button>
+                })}>What we do</button>
                 <button className={button === "clients" ? "min-[680px]:m-5 m-[5px] hover:cursor-pointer font-metropolis_700 text-[#ff5f5f] max-[680px]:bg-white max-[680px]:w-[680px] " : "max-[680px]:bg-white max-[680px]:w-[680px] min-[680px]:m-5 m-[5px] hover:cursor-pointer font-metropolis_700 text-black hover:text-[#ff5f5f]"} onClick={(() => {
                     setButton("clients");
                     router.push("/clients");
                 })}>Clients</button>
                 <button className={button === "partnership" ? "min-[680px]:m-5 m-[5px] hover:cursor-pointer font-metropolis_700 text-[#ff5f5f] max-[680px]:bg-white max-[680px]:w-[680px]" : " max-[680px]:bg-white max-[680px]:w-[680px]min-[680px]:m-5 m-[5px] hover:cursor-pointer font-metropolis_700 text-black hover:text-[#ff5f5f]"} onClick={(() => {
-                    setButton("partnership");
+                    setButton("partnerships");
                     router.push("/partnership");
-                })}>Partnership</button>
-                <button className={button === "blog" ? "min-[680px]:m-5 m-[5px] hover:cursor-pointer font-metropolis_700 text-[#ff5f5f] max-[680px]:bg-white max-[680px]:w-[680px]" : "max-[680px]:bg-white max-[680px]:w-[680px] min-[680px]:m-5 m-[5px] hover:cursor-pointer font-metropolis_700 text-black hover:text-[#ff5f5f]"} onClick={(() => {
-                    setButton("blog");
-                    router.push("/blog");
-                })}>Blog</button>
+                })}>Partnerships</button>
                 <button className="min-[680px]:m-5 hover:cursor-pointer text-white m-[5px] bg-[#ff5f5f] w-[100px] h-[30px] rounded-xl font-metropolis_700 max-[680px]:bg-white max-[680px]:w-[680px] max-[680px]:text-black" onClick={(() => router.push('/contact'))}>Let&apos;s Talk</button>
             </div>
         </div>
